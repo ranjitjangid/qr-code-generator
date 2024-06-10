@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+ <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+ 
+</head>
+<body class="bg-gray-800 py-10">
+  <div class="max-w-md mx-auto p-6 bg-gray-700 rounded-lg shadow-md qr">
+    <h1 class="text-xl font-bold mb-4 text-white">QR Code Generator</h1>
+    <input type="text" id="qr-input" placeholder="Enter text or URL" class="w-full px-3 py-2 mb-4 border rounded-md focus:outline-none focus:ring focus:border-blue-300 transition duration-300">
+    <button id="generate-button" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 transition duration-300">Generate QR Code</button>
+    <div id="qr-code" class="my-4 mx-auto"></div>
+    <button id="download-button" class="w-full bg-blue-500 text-white py-2 px-4 rounded-md mb-2 hidden hover:bg-blue-600 transition duration-300">Download QR Code</button>
+    <button id="close-button" class="w-full bg-gray-300 text-gray-800 py-2 px-4 rounded-md hidden hover:bg-gray-400 transition duration-300">Close QR Code</button>
+  </div>
+  <center>
+    <div class="text-white text-center absolute bottom-0 mb-2">
+      <p >Developed By <a class="underline " href="https://www.instagram.com/web.coder_official?igsh=MXVkeXBiMHRzcXhrag==">Ranjeet Sharma</a></p>
+    </div>
+  </center>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
